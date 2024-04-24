@@ -13,9 +13,18 @@
 
 <body>
     <!--Nav-->
-    <nav class="navbar navbar-light navbar-expand-sm bg-light">
-        <a href="/" class="navbar-brand">
-                    Whiskey Drop</a>
+    <div class="container-fluid navalert-container">
+        <div class="container-fluid alert-container">
+            <div class="row d-none d-sm-block">
+                <div class="col-12">
+                    <div class="site-wide-alert alert alert-warning">
+                        <strong>Sale Now On!</strong> We've got a sale on. Get a 12-month subscription for the price of 6! <a href="">See here for details!</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar navbar-dark navbar-expand-sm">
+            <a href="/" class="navbar-brand">Whiskey Drop</a>
 
         <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span></button>
@@ -41,8 +50,9 @@
         </div>
         <div class="d-none d-md-block">
             <p class="navbar-text my-auto mr-2"><i>Great whiskey delivered to your door</i></p>
-            <a href="/login">Sign In / Sign Up</a>
+            <a href="/login" class="btn btn--cta btn--red">Sign In / Sign Up</a>
         </div>
+    </div>
         <!--</div>-->
     </nav>
     <!--<div class="container alert-container">-->
@@ -66,7 +76,7 @@
                         <s class="d-none d-sm-inline">€19.99</s>
                         <span class="d-inline d-sm-none"><br></span>
                         <strong><mark>First one is free!</mark></strong></p>
-                    <p><button class="btn btn-lg btn-success" data-toggle="modal" data-target="#signUpModal">Sign Up!</button></p>
+                    <p><button class="btn btn-lg btn--cta btn--red" data-toggle="modal" data-target="#signUpModal">Sign Up!</button></p>
                     <p class="text-muted"><small>You must be over 18 to sign up to our service. Please drink responsibly.</small></p>
                 </section>
             </div>
@@ -119,7 +129,7 @@
     <div class="features-container">
         <section class="features">
             <div class="row">
-                <div class="col-12 my-5">
+                <div class="col-12 page-header">
                     <h2 class="text-uppercase">Features:</h2>
                     <hr />
                 </div>

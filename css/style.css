@@ -2,8 +2,17 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-.alert-container {
+.alert-container .col-12 {
+    padding-left: 0;
+    padding-right: 0;
+}
 
+.site-wide-alert {
+    border-radius: 0;
+    margin-bottom: 0;
+    padding: 5px 15px;
+    background-color: #eec802;
+    border-color: #eec802
 }
 
 .callout-container {
@@ -19,14 +28,78 @@ body {
   align-items: center;
   justify-content: center;
 
+  position: relative;
 }
 
-.quotes-container {
-
+.opaque-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,0.5);
 }
 
-.features-container {
+.quotes-container {}
 
+.features-container {}
+
+/* Page-header */
+
+.page-header {
+    margin-bottom: 0;
+    border-bottom: 0;
+    text-align: center;
+}
+
+.page-header h2 {
+    margin-top: 0;
+}
+
+/* Block dividers */
+
+.block-divider {
+    width: 75px;
+    height: 5px;
+    border: 0;
+}
+
+.block-divider--orange {
+    background-color: #f05f40;
+}
+
+.block-divider--short {
+    width: 35px;
+}
+
+/* Navbar */
+
+.navalert-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-left: 0;
+    padding-right: 0;
+    z-index: 1;
+}
+
+.navbar {
+    margin-bottom: 0;
+    border: 0;
+    width: 100%;
+    background-color: rgba(0,0,0,0.25);
+}
+
+.navbar .navbar-toggler {
+    border: 0;
+}
+
+.navbar-brand {
+    font-weight: bold;
+}
+
+.navbar .navbar-nav a {
+    font-weight: bold;
 }
 
 /*Jumbotron*/
@@ -50,4 +123,26 @@ body {
     font-size: 60%;
     font-style: italic;
     color: #d0d0d0;
+}
+
+/* Buttons */
+
+.btn--cta {
+    font-weight: bold;
+    border-radius: 23px;
+    width: 160px;
+}
+
+.btn--red {
+    color: white;
+    background-color: #f05f40;
+    border-color: #f05f40;
+}
+
+.btn--red:hover,
+.btn--red:active,
+.btn--red:focus,
+.btn--red:active:focus {
+    background-color: #df4929;
+    border-color: #df4929;
 }
