@@ -41,6 +41,11 @@ body {
     margin-bottom: 30px;
 }
 
+.jumbotron .lead {
+    margin: 25px 0;
+    color: #a7a7a7;
+}
+
 .jumbotron small {
     font-size: 60%;
     font-style: italic;
